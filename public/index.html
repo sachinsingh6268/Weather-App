@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwanPOC1FNk4KWcwhcyhFe9VpCt1_AjQg&libraries=places&callback=initMap">
+        </script> <!--we will add defer to this so that it loads after the entire of our javascript and HTML is loaded-->
+    <script defer src="./script.js"></script>
+    <!-- we have used "defer" so that it's going to load after our page is done rendering -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-icon">
+                <canvas id="icon" width="100" height="100"></canvas>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="general-info">
+                <div class="status">Enter a Location!!</div>
+                <div class="location">To Find the Weather</div>
+            </div>
+
+            <div class="details-section">
+                <div class="details">Title</div>
+                <div class="value">TBD</div>
+            </div>
+
+            <div class="details-section">
+                <div class="details">Temperature</div>
+                <div class="value">TBD</div>
+            </div>
+
+            <div class="details-section">
+                <div class="details">Precipitation</div>
+                <div class="value">TBD</div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-city" data-city-search placeholder="Enter Location">
+            </div>
+        </div>
+
+    </div>
+
+    <a href="https://openweathermap.org/api/one-call-3">Powered by OpenWeather</a>
+</body>
+
+</html>

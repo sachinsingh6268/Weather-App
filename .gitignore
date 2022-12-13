@@ -1,0 +1,4 @@
+# we have created this for when we are using version control system(VCS) to store stuff we don't accidentally check in our environment variables or our node modules. so put the things in here that we want to ignore. THIS WILL ENSURE THAT WE NEVER accidentally CHECK THESE INTO OUR version control system BECAUSE WE DON'T WANT TO EXPOSE API KEY AND OTHER STUFFS ANYWHERE BCZ PEOPLE CAN USE THIS FOR THEIR USES AND IT MAY COST US.
+
+.env
+node_modules
